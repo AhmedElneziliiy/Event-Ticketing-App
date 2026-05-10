@@ -4,7 +4,7 @@ An **ASP.NET Core MVC web application** for browsing and booking cinema event ti
 
 ## What it does
 
-Users can browse movies, actors, cinemas, and producers. Authenticated users can add event tickets to a shopping cart and place orders. Admin users manage all catalog data through the same interface.
+Users can browse movies, actors, cinemas, and producers. Authenticated users add tickets to a shopping cart and place orders. Admin users manage all catalog data.
 
 ## Tech Stack
 
@@ -18,7 +18,7 @@ Users can browse movies, actors, cinemas, and producers. Authenticated users can
 - Movie catalog with actors, cinemas, producers, and categories
 - Many-to-many relationships (movies ↔ actors, movies ↔ producers)
 - Shopping cart backed by session storage
-- Order creation and order history per user
+- Order creation and history per user
 - Role-based authorization (Admin vs. User)
 - Database seeder for initial catalog data
 
@@ -35,12 +35,6 @@ Users can browse movies, actors, cinemas, and producers. Authenticated users can
 
 ## Getting Started
 
-1. Set your connection string in `appsettings.json`.
-2. Apply migrations:
-   ```bash
-   dotnet ef database update
-   ```
-3. Run the app:
-   ```bash
-   dotnet run --project E-ticket
-   ```
+1. Set connection string in `appsettings.json`.
+2. Apply migrations: `dotnet ef database update`
+3. Run: `dotnet run --project E-ticket`
